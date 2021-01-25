@@ -7,12 +7,12 @@
 #
 # The script is composed from 3 different cells you can see below.
 #
-#  👉 **Click on each cell, and then the `▸`, one after the other:**
-#    - The `▸` button is found in the icon toolbar
-#    - Clicking the cell and then the `▸` button readies the cell for process execution by *compiling* the cell
-#    - After the `*** Keyword ***` cell has been compiled it can be run by clicking the `Find Image` button that appears
-#    - Running `*** Tasks ***` actually runs the whole robot
-#    - Make sure all cells have been run by checking the `[ ]` indicator. If run, there's a number inside.
+# 👉 **Click on each cell, and then the `▸`, one after the other:**
+# - The `▸` button is found in the icon toolbar
+# - Clicking the cell and then the `▸` button readies the cell for process execution by *compiling* the cell
+# - After the `*** Keyword ***` cell has been compiled it can be run by clicking the `Find Image` button that appears
+# - Running `*** Tasks ***` actually runs the whole robot
+# - Make sure all cells have been run by checking the `[ ]` indicator. If run, there's a number inside.
 
 *** Settings ***
 Documentation     My first robot!
@@ -24,14 +24,13 @@ Find Image
     Open Available Browser    https://images.google.com
     Input Text    name:q    cute puppy
     Submit Form
-    ${FIRST_IMAGE}=  Set Variable    css:div[data-ri=\"0\"]
+    ${FIRST_IMAGE}=    Set Variable    css:div[data-ri=\"0\"]
     Wait Until Element Is Visible    ${FIRST_IMAGE}
     Screenshot    ${FIRST_IMAGE}
 
 *** Tasks ***
 Find an Image from Google Images
     Find Image
-
 # ****
 #
 # Additional ways to run the robot:
@@ -54,4 +53,6 @@ Find an Image from Google Images
 #
 # 👉 Next, you may want to upload the robot to Robocorp Cloud. Press `Upload to Robocorp Cloud` and create free account!
 #
-# 🚀 Please find more examples at <img src="images/robot.svg" width="16"  style="vertical-align:text-top">&nbsp; https://robocorp.com/robots/.
+# 🩺 If you encounter an error please make sure to update your browser to the latest version. For more troubleshooting tips, see https://robocorp.com/docs/troubleshooting.
+
+
