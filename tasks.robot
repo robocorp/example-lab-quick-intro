@@ -53,6 +53,6 @@ Find an Image from Google Images
 #
 # 👉 Next, you may want to upload the robot to Robocorp Cloud. Press `Upload to Robocorp Cloud` and create free account!
 #
-# 🩺 If you encounter an error please make sure to update your browser to the latest version. For more troubleshooting tips, see https://robocorp.com/docs/troubleshooting.
+# If you encounter an error, please make sure to update your browser to the latest version. For more troubleshooting tips, see https://robocorp.com/docs/troubleshooting.
 
 
