@@ -16,7 +16,7 @@
 
 *** Settings ***
 Documentation     My first robot!
-Library           RPA.Browser
+Library           RPA.Browser.Selenium
 Task Teardown     Close All Browsers
 
 *** Keyword ***
